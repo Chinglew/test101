@@ -1,4 +1,7 @@
-
+/**
+ *
+ * @author Lewin
+ */
 public class TechnologyNews extends News {
     TechnologyNews(String content) {super(content);}
 

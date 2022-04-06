@@ -1,4 +1,7 @@
-
+/**
+ *
+ * @author Lewin
+ */
 public class PoliticalNews extends News {
     PoliticalNews(String content) {super(content);}
 

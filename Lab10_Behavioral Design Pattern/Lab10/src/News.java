@@ -1,3 +1,7 @@
+/**
+ *
+ * @author Lewin
+ */
 public abstract class News {
     private String content;
     private NewsTopic topic;

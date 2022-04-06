@@ -1,4 +1,7 @@
-
+/**
+ *
+ * @author Lewin
+ */
 public enum NewsTopic {
     ECONOMIC("ECONOMIC"),
     POLITICAL("POLITICAL"),
