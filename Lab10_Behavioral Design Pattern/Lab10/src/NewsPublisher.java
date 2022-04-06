@@ -8,9 +8,8 @@ import java.util.concurrent.Flow.Publisher;
 import java.util.concurrent.Flow.Subscriber;
 
 public class NewsPublisher implements Publisher<News> {
-    private String news;
-    private List<NewsReader> NewsReaders = new ArrayList<>();
-
+    private final List<NewsReader> NewsReaders = new ArrayList<>();
+    
     public void subscribe(NewsReader NewsReader) {
         this.NewsReaders.add(NewsReader);
     }
@@ -21,7 +20,7 @@ public class NewsPublisher implements Publisher<News> {
 
     void publish(News news) {
         for(NewsReader r : NewsReaders){
-            r.update(news.getContent());
+            r.update(news);
         }
     }
 

@@ -2,22 +2,17 @@
  *
  * @author Lewin
  */
-public class NewsReader extends NewsSubscriber{
+public class NewsReader implements NewsSubscriber{
     
-    private String r_name;
-    private NewsSubscriber newsSubscriber;
+    private final String r_name;
     
     public NewsReader(String name) {
         this.r_name = name;
-        newsSubscriber = new NewsSubscriber();
     }
 
-    public void update(String m) {
-        System.out.println(this.r_name+" got news :: " + m);
+    @Override
+    public void update(News news) {
+        System.out.println(this.r_name+" got news topic about :"+news.getTopic().toString() +" content : " + news.getContent());
     }
-    
-    
-    
-    
-    
+ 
 }
